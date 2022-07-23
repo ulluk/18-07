@@ -13,7 +13,7 @@ body{
     align-items: center;
     border-radius: 8px;
 }
-.container div{
+.container div :not(.alert){
     font-size: 15px;
     line-height: 18px;
     color: #000000;
@@ -21,14 +21,6 @@ body{
 
 form{
     margin-left: 55px;
-}
-
-input , select{
-    color: gray;
-    border-radius: 8px;
-    height: 48px;
-    border: 0.5px solid #AEAEAE;
-    margin-top: 3px;
 }
 button{
     margin-top: 10px;
@@ -51,10 +43,29 @@ button{
     letter-spacing: 1px;
     color: #FFFFFF;
 }
+.element{
+    color: gray;
+    border-radius: 8px;
+    height: 48px;
+    border: 0.5px solid #AEAEAE;
+    margin-top: 3px;
+}
+
+.empty-elem{
+    border-color: red;
+}
 
 label{
     font-family: 'Sora', sans-serif;
     line-height: 18px;
     font-size: 20px;
     margin-bottom: 10px;
+}
+.alert{
+    color: red;
+    margin-left: 10px;
+    display: none;
+}
+.alert-block{
+    display: block;
 }

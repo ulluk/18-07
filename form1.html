@@ -14,19 +14,30 @@
     <br>
     <form action="javascript:void(0)">
         <div>Личные данные</div>
-        <input type="text" placeholder="Фамилия" id="surname">
-        <input type="text" placeholder="Имя" id="name">
-        <input type="text" placeholder="Отчество" id="patronymic">
+        <div style="display: flex;flex-direction: row;">
+            <div>
+                <input class="element" type="text" placeholder="Фамилия" data-required data-surname id="surname">
+                <div class="alert" id="alert-surname">Заполните это поле!</div>
+            </div>
+            <div>
+                <input class="element" type="text" placeholder="Имя" data-required data-name id="name">
+                <div class="alert" id="alert-name">Заполните это поле!</div>
+            </div>
+            <div>
+                <input class="element" type="text" placeholder="Отчество" data-required data-patronymic id="patronymic">
+                <div class="alert" id="alert-patronymic">Заполните это поле!</div>
+            </div>
+        </div>
         <div>Паспортные данные</div>
         <br>
-        <input type="text" placeholder="Дата рождение" id="birth-date">
-        <input type="text" placeholder="Место проживания по прописке" id="home-address">
-        <input type="text" placeholder="Серийный номер AN/ID" id="serial-number">
-        <input type="text" placeholder="ИНН" id="TIN">
-        <input type="text" placeholder="Дата получения" id="date-of-receiving">
-        <input type="text" placeholder="Контактный номер" id="number">
-        <input type="text" placeholder="Элекронный адресс" id="email">
-        <select id="Banks">
+        <input class="element" type="text" placeholder="Дата рождение" id="birth-date">
+        <input class="element" type="text" placeholder="Место проживания по прописке" id="home-address">
+        <input class="element" type="text" placeholder="Серийный номер AN/ID" id="serial-number">
+        <input class="element" type="text" placeholder="ИНН" id="TIN">
+        <input class="element" type="text" placeholder="Дата получения" id="date-of-receiving">
+        <input class="element" type="text" placeholder="Контактный номер" id="number">
+        <input class="element" type="text" placeholder="Элекронный адресс" id="email">
+        <select class="element" id="Banks">
             <option value="0">Выберите банк</option>
             <option value="1">DemirBank</option>
             <option value="2">OptimaBank</option>

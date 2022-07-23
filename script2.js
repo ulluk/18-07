@@ -1,17 +1,8 @@
 funk = () => {
 
-    const Surname = document.querySelector('#g-surname');
-    const name = document.querySelector('#g-name');
-    const patronymic = document.querySelector('#g-patronymic');
-    const birthDate = document.querySelector('#g-birth-date');
-    const homeAddress = document.querySelector('#g-home-address');
-    const serialNumber = document.querySelector('#g-serial-number');
-    const TIN = document.querySelector('#g-TIN');
-    const dateOfReceiving = document.querySelector('#g-date-of-receiving');
-    const number = document.querySelector('#g-number');
-    const email = document.querySelector('#g-email');
-    const bank = document.querySelector('#g-Banks');
-
+    const arr = document.querySelectorAll('input');
+    console.log(arr);
+/*
     Surname.value = localStorage.surname;
     name.value = localStorage.name;
     patronymic.value = localStorage.patronymic;
@@ -24,7 +15,7 @@ funk = () => {
     email.value = localStorage.email;
     bank.value = localStorage.bank;
 
-    console.log(localStorage)
+    console.log(localStorage)*/
 }
 funk();
 
